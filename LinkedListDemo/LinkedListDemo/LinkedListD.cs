@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace LinkedListDemo
 {
+    //LinkedList is a linear data structure,which stores the element in the non contiguous location.
+    //The node or the element are linked with each other using pointer.
+    //Linked list class allow insertion and deletion of element from a list very fastly.
+    //Node:- Node will be your Exact value 
+    //next:- Reference of the next node.
     public class LinkedListD
     {
 
@@ -26,19 +31,20 @@ namespace LinkedListDemo
 
 
             }
+            //It will remove the stack element
             Console.WriteLine("Remove the element from the list" + list.Remove(9));
             foreach (int i in list)
             {
                 Console.WriteLine("Elements from the list are:"+i);
             }
-
+            //It will remove last element in the list
             Console.WriteLine("Removed a element from list");
             list.Remove(list.Last);
             foreach (int i in list)
                 {
                 Console.WriteLine("Elements in list are:"+i);
             }
-
+            //It will Delete all the elements from the list 
             list.Clear();
             foreach (int i in list)
             {
