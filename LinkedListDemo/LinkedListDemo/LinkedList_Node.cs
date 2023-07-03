@@ -42,6 +42,25 @@ namespace LinkedListDemo
                 temp = temp.next;
             }
         }
+
+        //Print data in Reverse Order.
+        //When u are inserting a value in a node ,then head is null.
+        public void Reverse_Order(int data)
+        {
+            Node node=new Node(data);
+            if (head == null)
+            {
+                head = node;
+
+            }
+            else 
+            {
+                Node temp = head;
+                head = node;
+                head.next = temp;
+            }
+            
+        }
         }
     }
 

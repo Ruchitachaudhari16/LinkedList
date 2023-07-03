@@ -11,12 +11,14 @@ namespace LinkedListDemo
     {
         static void Main(string[] args)
         {
+            LinkedList_Node linkedListNode = new LinkedList_Node();
             while (true) 
             {
                 Console.WriteLine("Choose the below options");
                 Console.WriteLine("1:LinkedList Demo");
                 Console.WriteLine("2:Stack Program");
                 Console.WriteLine("3:Linked List Node");
+                Console.WriteLine("4:Linked List in Reverse Order");
                 int choice=Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -34,14 +36,21 @@ namespace LinkedListDemo
 
                         case 3:
                         //Linked list using user Defined.
-                        LinkedList_Node linkedListNode = new LinkedList_Node();
-                        linkedListNode.Add(4);
-                        linkedListNode.Add(55);
-                        linkedListNode.Add(100);
-                        linkedListNode.Add(27);
+                        LinkedList_Node linkedListNodes = new LinkedList_Node();
+                        linkedListNodes.Add(4);
+                        linkedListNodes.Add(55);
+                        linkedListNodes.Add(100);
+                        linkedListNodes.Add(27);
 
-                        linkedListNode.Display();//Display Method from LinkedList_Node
+                        linkedListNodes.Display();//Display Method from LinkedList_Node
 
+                        break;
+                        case 4:
+                        LinkedList_Node linkedListNodeOne = new LinkedList_Node();
+                        linkedListNodeOne.Reverse_Order(33);
+                        linkedListNodeOne.Reverse_Order(58);
+                        linkedListNodeOne.Reverse_Order(99);
+                        linkedListNodeOne.Display();
                         break;
 
                     default:
