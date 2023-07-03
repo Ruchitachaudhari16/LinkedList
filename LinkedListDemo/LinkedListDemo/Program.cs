@@ -39,6 +39,9 @@ namespace LinkedListDemo
                         linkedListNode.Add(55);
                         linkedListNode.Add(100);
                         linkedListNode.Add(27);
+
+                        linkedListNode.Display();//Display Method from LinkedList_Node
+
                         break;
 
                     default:
