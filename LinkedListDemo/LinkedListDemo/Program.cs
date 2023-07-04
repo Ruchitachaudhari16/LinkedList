@@ -22,6 +22,7 @@ namespace LinkedListDemo
                Console.WriteLine("5:Remove FirstNode From LinkedList");
                 Console.WriteLine("6:Remove Last Element from LinkedList");
                 Console.WriteLine("7:Size Of Linked List");
+                Console.WriteLine("8:Search for the Element");
                 int choice=Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -44,8 +45,8 @@ namespace LinkedListDemo
                         linkedListNode.Add(55);
                         linkedListNode.Add(100);
                         linkedListNode.Add(27);
-
                         linkedListNodes.Display();//Display Method from LinkedList_Node
+                        Console.WriteLine("\n");
                         break;
 
                         case 4:
@@ -54,21 +55,31 @@ namespace LinkedListDemo
                         linkedListNodeOne.Reverse_Order(58);
                         linkedListNodeOne.Reverse_Order(99);
                         linkedListNodeOne.Display();
+                        Console.WriteLine("\n");
                         break;
 
                         case 5:
                        linkedListNode.RemoveFirstNode();
                         linkedListNode.Display();
+                        Console.WriteLine("\n");
                         break;
 
                         case 6:
                         linkedListNode.Remove_Last();
                         linkedListNode.Display();
+                        Console.WriteLine("\n");
                         break;
 
                         case 7:
                         linkedListNode.SizeOfLinkedList();
                         linkedListNode.Display();
+                        Console.WriteLine("\n");
+                        break;
+
+                        case 8:
+                        int val=linkedListNode.Search(27);
+                        Console.WriteLine(val);
+                        Console.WriteLine("\n");
                         break;
 
 
