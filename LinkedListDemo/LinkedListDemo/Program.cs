@@ -19,7 +19,8 @@ namespace LinkedListDemo
                 Console.WriteLine("2:Stack Program");
                 Console.WriteLine("3:Linked List Node");
                 Console.WriteLine("4:Linked List in Reverse Order");
-                Console.WriteLine("5:Remove FirstNode From LinkedList");
+               Console.WriteLine("5:Remove FirstNode From LinkedList");
+                Console.WriteLine("6:Remove Last Element from LinkedList");
                 int choice=Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -44,8 +45,8 @@ namespace LinkedListDemo
                         linkedListNode.Add(27);
 
                         linkedListNodes.Display();//Display Method from LinkedList_Node
-
                         break;
+
                         case 4:
                         LinkedList_Node linkedListNodeOne = new LinkedList_Node();
                         linkedListNodeOne.Reverse_Order(33);
@@ -55,10 +56,15 @@ namespace LinkedListDemo
                         break;
 
                         case 5:
-                       
-                        linkedListNode.RemoveFirstNode();
+                       linkedListNode.RemoveFirstNode();
                         linkedListNode.Display();
                         break;
+
+                        case 6:
+                        linkedListNode.Remove_Last();
+                        linkedListNode.Display();
+                        break;
+
 
 
 
