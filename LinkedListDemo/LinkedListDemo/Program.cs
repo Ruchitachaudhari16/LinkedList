@@ -23,6 +23,7 @@ namespace LinkedListDemo
                 Console.WriteLine("6:Remove Last Element from LinkedList");
                 Console.WriteLine("7:Size Of Linked List");
                 Console.WriteLine("8:Search for the Element");
+                Console.WriteLine("9:Inserting data into a stack");
                 int choice=Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -80,6 +81,15 @@ namespace LinkedListDemo
                         int val=linkedListNode.Search(27);
                         Console.WriteLine(val);
                         Console.WriteLine("\n");
+                        break;
+
+                        case 9:
+                            StackLinkedList stackLinkedList = new StackLinkedList();
+                        stackLinkedList.Push(100);
+                        stackLinkedList.Push(58);
+                        stackLinkedList.Push(10);
+                        stackLinkedList.Push(9);
+                        stackLinkedList.Display();
                         break;
 
 
