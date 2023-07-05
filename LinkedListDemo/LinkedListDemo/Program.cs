@@ -24,6 +24,7 @@ namespace LinkedListDemo
                 Console.WriteLine("7:Size Of Linked List");
                 Console.WriteLine("8:Search for the Element");
                 Console.WriteLine("9:Inserting data into a stack");
+               
                 int choice=Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -90,8 +91,10 @@ namespace LinkedListDemo
                         stackLinkedList.Push(10);
                         stackLinkedList.Push(9);
                         stackLinkedList.Display();
+                        stackLinkedList.Peek();
                         break;
 
+                        
 
 
 
