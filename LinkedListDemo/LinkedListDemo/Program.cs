@@ -24,7 +24,8 @@ namespace LinkedListDemo
                 Console.WriteLine("7:Size Of Linked List");
                 Console.WriteLine("8:Search for the Element");
                 Console.WriteLine("9:Inserting data into a stack");
-               
+                Console.WriteLine("10:Inserting data into Queue");
+
                 int choice=Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -100,6 +101,14 @@ namespace LinkedListDemo
                         Console.WriteLine("-------------------------------------------------");
                         Console.WriteLine("Elements in a stack after pop Operation");
                         stackLinkedList.Display();
+                        break;
+
+                        case 10:
+                            QueueLinkedList queueLinkedList = new QueueLinkedList();
+                            queueLinkedList.Enqueue(100);
+                        queueLinkedList.Enqueue(25);
+                        queueLinkedList.Enqueue(75);
+                        queueLinkedList.Enqueue(16);
                         break;
 
                         
