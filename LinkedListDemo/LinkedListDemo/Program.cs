@@ -88,10 +88,18 @@ namespace LinkedListDemo
                             StackLinkedList stackLinkedList = new StackLinkedList();
                         stackLinkedList.Push(100);
                         stackLinkedList.Push(58);
-                        stackLinkedList.Push(10);
-                        stackLinkedList.Push(9);
+                        stackLinkedList.Push(16);
+                        stackLinkedList.Push(11);
                         stackLinkedList.Display();
+                        Console.WriteLine("\n");
+                        Console.WriteLine("Peek element from the stack");
                         stackLinkedList.Peek();
+                        Console.WriteLine("------------------------------------------------");
+                        Console.WriteLine("Pop element from the stack");
+                        stackLinkedList.Pop();
+                        Console.WriteLine("-------------------------------------------------");
+                        Console.WriteLine("Elements in a stack after pop Operation");
+                        stackLinkedList.Display();
                         break;
 
                         
