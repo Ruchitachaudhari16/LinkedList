@@ -109,13 +109,13 @@ namespace LinkedListDemo
                         queueLinkedList.Enqueue(25);
                         queueLinkedList.Enqueue(75);
                         queueLinkedList.Enqueue(16);
+                        Console.WriteLine("--------------------------------");
+                        Console.WriteLine("Remove Element from Queue");
+                        queueLinkedList.Dequeue();
+                        queueLinkedList.Display();
                         break;
 
-                        
-
-
-
-                    default:
+                        default:
                         Console.WriteLine("Invalid Option");
                         break;
                         
